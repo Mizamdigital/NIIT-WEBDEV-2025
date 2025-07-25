@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+
+}
+ /*  header */
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  padding: 10px 20px;
+}
+ 
+/* left-nav */
+#nav{
+  display: flex;
+  gap: 20px;
+ 
+}
+
+.header-link{
+   text-decoration: none;
+   color: black;
+   padding: 10px;
+   border-radius: 8px;
+   transition: background-color,text-decoration 0.15s, color 0.15s;
+}
+
+.header-link:hover{
+  text-decoration: underline;
+  color: blue;
+  background-color: rgb(161, 161, 161);
+ 
+}
+
+/* middle-search */
+
+#middle-search{
+  height: 40px;
+  margin-left: 300px;
+  padding-left: 20px;
+  padding-right: 300px;
+  font-size: 20px;
+  border-radius: 30px;
+  color: gray;
+  border: 1px solid gray;
+}
+
+#search-button{
+padding: 10px;
+border-radius: 4px;
+border: 1px solid gray;
+cursor: pointer;
+}
+ 
+/* right-contact */
+.right-contact{
+  margin-left: auto;
+}
+
+/* main content */
+
+.main-content{
+  display: grid;
+  height: 400px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas: 
+  "menu menu slide-1 slide-1"
+  "menu menu slide-2 slide-2"
+  "menu menu slide-3 slide-3"
+  "menu menu slide-4 slide-4"
+  "img ss1 img2 s1"
+  "img ss2 img2 s2"
+  "img ss3 img2 s3"
+  ;
+  gap: 20px;
+  margin: auto;
+  
+}
+
+.menu{
+  grid-area: menu;
+  background-color: rgb(101, 148, 148);
+}
+
+.slide-1{
+  grid-area: slide-1;
+  background-color: rgb(152, 233, 233);
+}
+
+.slide-2{
+  grid-area: slide-2;
+  background-color: rgb(111, 237, 237);
+}
+
+.slide-3{
+  grid-area: slide-3;
+  background-color: rgb(57, 127, 127);
+}
+
+.slide-4{
+  grid-area: slide-4;
+  background-color: rgb(111, 154, 154);
+}
+
+.img{
+  grid-area: img;
+  background-color: rgb(146, 220, 220);
+}
+
+.ss1{
+  grid-area: ss1;
+  background-color: rgb(111, 154, 154);
+}
+
+.ss2{
+  grid-area: ss2;
+  background-color: aquamarine;
+}
+
+.ss3{
+  grid-area: ss3;
+  background-color: rgb(122, 202, 176);
+}
+
+.img2{
+  grid-area: img2;
+  background-color: rgb(169, 233, 212);
+}
+
+.s1{
+  grid-area: s1;
+  background-color: rgb(111, 154, 154);
+}
+
+.s2{
+  grid-area: s2;
+  background-color: aquamarine;
+}
+
+.s3{
+  grid-area: s3;
+  background-color: rgb(122, 202, 176);
+}
+
+
+

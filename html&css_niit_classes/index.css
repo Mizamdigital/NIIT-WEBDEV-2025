@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+  height: 1000px;
+}
+
+header{
+  background-color: brown;
+  height: 100px;
+}
+
+h1{
+  position: absolute;
+  font-size: 25px;
+  left: 43%;
+  top: 40px;
+  color: white;
+}
+
+.profile-pic{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  top: 20px;
+}
+
+.main-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 30px;
+  padding: 40px;
+  cursor: pointer;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition-property: 
+  text-decoration, color, background-color;
+  transition-duration: 3s;
+  transition-delay: 0.15s;
+}
+
+
+a:hover:not(.active){
+  text-decoration: underline;
+  color: palegreen;
+  background-color: rgb(196, 81, 81);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.active{
+  background-color: black;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.main-div{
+  display: flex;
+/*   margin-top: 50px; */
+  margin-top: 15%;
+  
+}
+
+.first-div{
+  display: flex;
+  background-color: green;
+  border: 2px solid black;
+  padding: 50px 100px;
+  margin-left: 35%;
+}
+
+.green{
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  position: absolute;
+  float:right;
+}
+
+.second-div{
+  display: flex;
+  background-color: red;
+  border: 2px solid black;
+  padding: 80px;
+  border-radius: 8px;
+}
+
+.third-div{
+  display: flex;
+  background-color: black;
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.zero{
+  display: grid;
+  height: 700px;
+  background-color: #cac9c9;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 125px 125px 125px 125px ;
+  grid-template-areas: 
+  "five five five five"
+  "one one one two"
+  "three four four two"
+  "three four four two"
+  "three seven seven seven";
+  gap: 10px;
+  text-align: center;
+  color: white;
+}
+
+.one{
+  background-color: bisque;
+  grid-area: one;
+  margin-left: 30px;
+}
+
+.two{
+  background-color: burlywood;
+  grid-area: two;
+}
+.three{
+  background-color: yellow;
+  grid-area: three;
+  margin-left: 30px;
+}
+
+.four{
+  background-color: chocolate;
+  grid-area: four;
+}
+
+.five{
+  background-color: pink;
+  grid-area: five;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.seven{
+  background-color: violet;
+  grid-area: seven;
+  height: 120px;
+}
+
+.first{
+  width:  6%;
+  height: 30px;
+  margin-left: 50%;
+  background-color: brown;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-property:scale, background-color;
+  transition-delay: 5s;
+  transition-duration: 6s;
+
+  animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.first:hover{
+  scale: 2;
+  background-color: aquamarine;
+} 
+
+@keyframes anim{
+  0%{
+
+  }
+  50%{
+    
+  }
+  100%{
+    transform: rotate(360deg);
+    scale: 10;
+
+  }
+}

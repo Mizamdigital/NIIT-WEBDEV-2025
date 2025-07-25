@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#box1{
+  position: relative;
+   background-color: red;
+   animation-name: anim;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   animation-delay: 1s;
+   width: 30%;
+   height: 150px;
+}
+
+@keyframes anim{
+  from{
+    background-color: yellow;
+    left: 0%;
+  }
+  to{ background-color: chocolate;
+    left: 100%;
+  }
+}
+
+#box2{
+  border: 2px solid black;
+  background: white;
+  width: 30%;
+  height: 150px;
+  margin-top: 20px;
+  animation-name: slidein;
+  animation-duration: 60s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes slidein{
+  0%{
+    background-color: plum;
+  }
+  10%{
+    background-color: orange;
+    right: 200px;
+    top: 0;
+  }
+  20%{
+    background-color: green;
+    left: 800px;
+  }
+  30%{
+    background-color: purple;
+    top: 400px;
+  }
+  40%{
+    background-color: yellow;
+    left: 0;
+    top: 0;
+  }
+  50%{
+    background-color: grey;
+  }
+  60%{
+    background-color: blue;
+  }
+  70%{
+    background-color: burlywood;
+  }
+  80%{
+    background-color: blueviolet;
+  }
+  90%{
+    background-color: yellowgreen;
+  }
+  100%{
+    background-color: lawngreen}
+}

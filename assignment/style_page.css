@@ -1,0 +1,80 @@
+body{
+  text-align: center;
+  justify-content: center;
+  background-color: orange;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100vh;
+}
+
+.container{
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+
+header{
+  background-color: green;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 30px;
+  border: 2px solid rgba(94, 54, 10, 0.849);
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 128, 0, 0.4);
+  padding-bottom: 15px;
+}
+
+#p{
+  font-size: 12px;
+  color: #fff;
+}
+
+#img{
+   background: #fff;
+   border: 3px rgba(5, 168, 92, 0.8) solid;
+   border-radius: 30px;
+   padding: 30px;
+   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
+   padding-bottom: 20px;
+   cursor: pointer;
+   margin-bottom: 0 20px;  
+   
+
+   
+ 
+}
+  
+.into{
+text-align: center;
+padding: 30px;
+background-color: rgb(75, 49, 2);
+border-radius: 30px;
+box-shadow: 5px 5px 10px rgba(114, 75, 3, 0.4);
+border: 3px rgba(5, 168, 92, 0.8) solid;
+}
+
+#title{
+  color: #fff;
+  background-color: rgb(114, 75, 3);
+  border: 1px dashed;
+  border-radius: 30px;
+  margin-bottom: 0 20px;
+
+  
+}
+
+#story{
+  color: #fff; 
+}
+
+.footer_container{
+  background-color: rgb(61, 44, 15);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}

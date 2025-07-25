@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header,.menu,footer{
+  width: 100%;
+  border: 2px solid red;
+  height: 40px;
+}
+.container{
+  display: flex;
+  height: 600px;
+}
+.main-content{
+  border: 2px solid red;
+  width: 75%;
+
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+}
+.top-container{
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.tweet{
+  border: 2px solid orange; 
+  height: 540px;
+  width: 95%;
+  margin: 10px;
+}
+
+.picture,.about{
+  border: 2px solid red;
+  width: 50%;
+  margin: 2px;
+
+}

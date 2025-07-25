@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+ 
+  color: #3b2a1a;
+  background-color: #fff8f0;
+}
+
+.banner{
+  background-color: #fff4e6;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 3 0px;
+  font-weight: bold;
+  border-bottom: 2px solid gold;
+  width: 100%;
+  height: 40px;
+  
+  
+}
+
+.navbar{
+  width: 100%;
+  height: 40px;
+  background-color: #3b2a1a;
+  padding: 30px 20px;
+  border-bottom: 3px solid gold;
+ 
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 2px solid #333;
+  border-radius: 4px;
+  transition: background-color color box-shadow text-decoration 0.15s;
+}
+
+a:hover{
+  background-color: #fff4e6;
+  color: #3b2a1a;
+  box-shadow: 5px 5px 10px rgba(255, 217, 0, 0.3);
+  text-decoration: underline;
+}
+
+.main-container{
+  display: flex;
+  border: 10px solid #ddd;
+  height: 600px;
+}
+
+.main-content{
+   display: flex;
+   width: 75%;
+   justify-content: center;
+   background-color: white;
+   padding: 20px;
+   border: 10px solid #ccc; 
+   font-weight: bold; 
+   align-items: center;
+}
+
+.sidebar{  
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 40px;
+    width: 25%;
+}
+
+.top-box{
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  
+}
+
+.box{
+    background-color: #f3e4c7;
+    padding: 30px;
+    border-radius: 8px;
+    border: 4px solid #ddd;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 50%;   
+    margin: 2px;
+}
+
+.box1{
+  background-color: #f3e4c7;
+    padding: 30px;
+    border-radius: 8px;
+    border: 4px solid #ddd;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 600px;
+    top: 100%
+    
+}
+
+.footer{
+   background-color: #2e1f12;
+   color: white;
+   padding: 30px 20px;
+   text-align: center;
+   font-weight: bold;
+   width: 100%;
+   height: 40px;
+}

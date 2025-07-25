@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+}
+
+header{
+  background-color: purple;
+  margin: auto;
+}
+
+header h1{
+  color: white;
+  text-shadow: 3px 5px orange;
+}
+
+#contentbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contentbox h2{
+ color: purple;
+}
+
+#loader{
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  color: green;
+  border: 16px solid #333;
+  border-top:16px solid yellow;
+  border-left:16px solid peru;
+  border-bottom:16px solid yellow;
+  border-top:16px solid hotpink;
+  border-radius: 50%;
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+   from {
+    transform: rotate(0deg);
+   }
+   to{
+    transform: rotate(360deg);
+   }
+}

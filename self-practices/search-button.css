@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: fit-content;
+  margin: auto;
+  min-height: 100vh;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.9);
+  background-image: url("../self-practices/sky.jpeg");
+  background-size: cover;
+
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+ }
+
+ h1{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #333;
+ }
+
+.searchform {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #000;
+  border-radius: 500px;
+  max-width: 650px;
+  display: flex;
+}
+
+.offscreen{
+    position: absolute;
+    left: 10000px;
+}
+
+ .searchText {
+   color: #333;
+   flex-grow: 1;
+   padding: 10px 80px 10px 20px;
+   border: none;
+   background: transparent;
+   outline: none;
+ }
+
+ input,button{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .search-button{
+  padding: 5px 15px 5px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+ }
+
+ .search-button:hover,.search-button:focus{
+   color: white;
+   text-shadow: 2px 2px 2px #333;
+ }
+
+ @media only screen and (min-width:768px) {
+  input, button {
+    font-size: 1.8rem;
+  }
+ }
+
+ 
+
+  

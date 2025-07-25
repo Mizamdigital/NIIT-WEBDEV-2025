@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: brown;
+}
+
+.transform_box{
+  width: 50%;
+  height: 300px;
+  background-color: white;
+  font-size: 1rem;
+  margin: 30px 0px 30px 30px;
+}
+#box1{
+  background-color: aqua;
+}
+/* it move the element */
+#box1:hover{
+  transform: translate(50px,100px);
+}
+
+#box2{
+ border: 8px solid orange;
+ border-radius: 8px;
+}
+/* it changes the size */
+#box2:hover{
+  transform: scale(50%);
+}
+
+/* this changing the direction from left to right.
+you can also use {scaleY -1} */
+.box2img:hover{
+  transform: scalex(-1);
+}
+ 
+/* it changes the direction */
+#box3:hover{
+  transform: skewX(50deg);
+}
+/* it rotate the element and change the dimention */
+#box4:hover{
+  transform: rotate(45deg);
+}

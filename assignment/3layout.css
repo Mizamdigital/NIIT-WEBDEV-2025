@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: georgia, serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: skyblue;
+  
+}
+
+.logo-container{
+  display: flex;
+  width: 94.8%;
+  height: 40px;
+  background-color: azure;
+  flex-direction: row;
+  margin: 20px 50px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.logo{
+   display: flex;
+   margin-left: 20px;
+   font-size: 20px;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  margin-left: 70%;
+}
+
+.banner{
+  width: 94.8%;
+  height: 100px;
+  background-color: azure;
+  margin: 20px 50px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.intro{
+  width: 94.8%;
+  height: 60px;
+  background-color: azure;
+  margin: 20px 50px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+  margin: 20 50px;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+.one,.two,.three{
+  width: 30.6%;
+  border: 1px solid black;
+  background-color: azure;
+  margin-bottom: 20px;
+  padding: 200px 0; 
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 0 50px;
+  color: azure;
+}
+

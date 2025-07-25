@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+  font-size: 18px;
+  background-color: black;
+  height: 3000px;
+
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  gap: 500px;
+  position: fixed;
+  background-color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.container-child{
+   display: flex;
+   width: 90%;
+   gap: 10px;
+   justify-content: center;
+   text-align: center;
+   
+}
+
+img{
+ 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-name{
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.button{
+  display: flex;
+  width: 50%;
+  gap: 10px;
+  padding-right: 50px;
+}
+
+.button-add{
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 0 5px;
+  width: 90px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.button-message{
+  border: none;
+  color: black;
+  border-radius: 4px;
+  padding: 0 5px;
+  width: 90px;
+  height: 40px;
+  font-weight: bold;
+  background-color: hsla(0, 0%, 31%, 0.399);
+}
+
+.left-sidebar-1{
+  display: flex;
+  background-color: azure;
+  width: 80px;
+  height: 450px;
+  position: fixed;
+  top: 80px;
+  padding-top: 20px;
+ 
+}
+
+.pics{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 15px;
+  
+}
+
+.left-sidebar-2{
+  display: flex;
+  background-color: rgb(56, 57, 57);
+  width: 200px;
+  height: 450px;
+  position: fixed;
+  top: 80px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-left: 80px;
+  color: rgb(155, 156, 157);
+  gap: 10px;
+  flex-direction: column;
+}
+
+.left-sidebar-2-child{
+  display: flex;
+  gap: 120px;
+}
+
+.info{
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.plus{
+  font-size: 24 px;
+  font-weight: bold;
+}

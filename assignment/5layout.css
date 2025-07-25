@@ -1,0 +1,122 @@
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica,sans-serif;
+}
+
+body{
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  height: auto;
+}
+
+.logo-container{
+  display: flex;
+  background-color:aliceblue;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:  center;
+  padding: 10px;
+  
+}
+
+.logo{
+  display: flex;
+  padding-left: 80px;
+  width: 15%;
+
+}
+
+
+.nav{
+  display: flex;
+  padding-right: 200px;
+  gap: 30px;
+}
+
+.nav>a{
+  text-decoration: none;
+  color: black;
+  transition: color text-decoration 0.15s;
+}
+.nav>a:hover{
+  text-decoration: underline;
+  color: rgb(211, 24, 55);
+}
+
+
+.main-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: auto;
+  background-color: rgb(211, 24, 55);
+  padding: 30px 80px;
+
+}
+
+.boxs{
+  width: 23%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+img{
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.box{
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   margin: 40px 20px;
+   width: 100%;
+
+   
+}
+
+.box3{
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  padding: 20px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.box3-img{
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: box-shadow 0.15s;
+}
+.box3-img:hover{
+ box-shadow: 0 3px 5px hsla(0, 0%, 20%, 0.5);
+}
+
+footer{
+  width: 100%;
+  background-color: rgb(220, 223, 223);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: text-decoration color 0.15s;
+}
+
+footer:hover{
+  text-decoration: underline;
+  color: rgb(211, 24, 55);
+}
