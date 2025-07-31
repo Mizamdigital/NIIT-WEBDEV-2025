@@ -13,12 +13,12 @@ body{
 
 .main-header-container{
   max-width: 100%;
-  margin: auto;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   height: 55px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border-bottom: 1px solid #bdbcbc;
   position: fixed;
   z-index: 10; /* higher layer */
@@ -27,20 +27,25 @@ body{
 
 .header-container{
   display: flex;
-  
+  align-items: center;
+  justify-content: center;
   
 }
 
 .hamburger-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
    width: 12%;
-   margin-left: 8px;
+   height: 60px;
+   margin-left: 0px;
    cursor: pointer;
-   
-}
+ }
 
 .youtube-logo{
   margin-left: 22px;
   width: 45%;
+  height: 60px;
   cursor: pointer;
 }
 
@@ -75,8 +80,8 @@ body{
    cursor: pointer;
 }
 
-.search-button:hover{
-  background-color: #a1a1a14d;
+.search-button:hover #search{
+  display: block;
 }
 
 .search-img{
@@ -85,9 +90,19 @@ body{
   padding-top: 10px;
 }
 
+#search{
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
 .voice-search{
-  margin-top: 40px;
+  margin-top: 5px;
+  margin-left: 5px;
   cursor: pointer;
+}
+
+.voice-search:hover #voice{
+  display: block;
 }
 
 .voice-search-img{
@@ -100,39 +115,78 @@ body{
   cursor: pointer;
 }
 
+#voice{
+  margin-bottom: -10px;
+}
+
+
 .right-section{
   display: flex;
   margin-left: 500px;
   margin-right: 5px;
   align-items: center;
   gap: 30px;
+  position: relative;
 }
 
 
 .tooltip-container{
   width: 23px;
   cursor: pointer;
-  padding-top: 40px;
+  padding-top: 40px; 
+}
+.tooltip-container:hover .tooltip{
+  display: block;
 }
 
 .icon-create{
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
+  
 }
 
 .icon{
   position: relative;
+  margin-bottom: 22px;
+
+}
+
+#youtube{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#notifications{
+  position: relative;
+  
+}
+
+.notification-count{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  bottom: 35px;
+  left: 100px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .tooltip{
+  display: none;
   position: absolute; 
   border: 1px solid gray;
   padding: 5px;
   border-radius: 2px;
   color: white;
   background-color: rgb(128, 127, 127);
-  bottom: -35px;
-  margin-left: 5px;
+  bottom: -30px;
+  margin: auto;
   font-size: 12px;
 }
 
@@ -299,3 +353,117 @@ body{
    color: rgb(96, 96, 96);
    margin-top: 3px;
 }
+
+@media screen and (min-width: 320px) and (max-width:786px) {
+
+
+.main-header-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+   .hamburger-menu{
+    width: 30px;
+    margin-left: 0;
+
+  }
+  
+  .youtube-logo{
+    width: 90px;
+    margin-left: 20px;
+  }
+  
+  .header-middle-section{
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .search-bar{
+    display: none;
+  }
+  .search-button{
+    width: 50px;
+    margin-left: 0px;
+    margin-bottom: 3px;
+    background-color: white;
+    border: none;
+    margin-bottom: 15px;
+  
+  }
+
+  .search-img{
+    width: 30px;
+    margin-top: 5px;
+  }
+
+  .voice-search{
+    
+  }
+  .voice-search-img{
+    width: 36px;
+    background-color: white;
+    right: 22px;
+  }
+
+  .right-section{
+    display: flex;
+    position: relative;
+    margin-left: 30px;
+    right: 35px;
+    width: 100%;
+  }
+  .tooltip-container{
+    width: 30px;
+    padding-bottom: 10px;
+    
+  }
+
+  .notifications{
+    position: relative;
+  }
+  .notification-count{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 120px;
+    top: 40px;
+  }
+
+ .sidebar{
+  display: none;
+ } 
+ 
+ .video-card-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .video-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .video-time{
+    bottom: 105px;
+    right: 40px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+

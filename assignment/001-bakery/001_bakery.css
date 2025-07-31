@@ -374,7 +374,7 @@ footer{
   font-weight: 500;
 }
 
-@media screen and (min-width:320px) and (max-width:1024px){
+@media screen and (max-width:767px){
   .main-wrap{
     display: flex;
     flex-direction: column;
@@ -384,4 +384,26 @@ footer{
   }
 
   
+}
+
+@media screen and (min-width:1025px) {
+  .main-wrap{
+    max-width: 920px;
+  }
+  
+  .body-wrapper{
+    width: 100%;
+  }
+  
+  .main-header{
+    height: 60vh;
+  }
+  
+  .header-text h1{
+    font-size: 4rem;
+  }
+  
+  .header-text p{
+    font-size: 1.2rem;
+  }
 }

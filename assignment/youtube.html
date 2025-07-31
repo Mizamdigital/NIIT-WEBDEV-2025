@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width initial-scale=1.0">
+     <meta name="viewport" content  ="width=device-width, initial-scale=1.0">
      <title>Youtube-structure</title>
      <link rel="stylesheet" href="youtube.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +21,11 @@
         <div class="header-middle-section">
              <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button" type="submit"><img class="search-img" src="images-copy/search.svg" alt="">
-              <div class="tooltip">Search</div>
+              <div id="search" class="tooltip">Search</div>
             </button>
           <div class="voice-search">
              <img class="voice-search-img" src="images-copy/voice-search-icon.svg" alt="">
-             <div class="tooltip">
+             <div id="voice" class="tooltip">
                 Search with your voice
              </div>
           </div>  
@@ -34,18 +34,18 @@
       <div class="right-section">
           <div class="tooltip-container">
            <img class="icon-create" src="images-copy/create-icon.svg" alt="">
-           <div class="tooltip">
+           <div id="create" class="tooltip">
              Create
            </div>
         </div>
           <div class="tooltip-container">
            <img class="icon" src="images-copy/youtube-apps.svg" alt=""> 
-           <div class="tooltip">
+           <div id="youtube" class="tooltip">
              YouTube apps 
            </div>
         </div>
            <div class="tooltip-container">
-            <img class="icon" src="images-copy/notifications.svg" alt="">
+            <img class="icon" id="notifications" src="images-copy/notifications.svg" alt="">
             <div class="notification-count">3</div>
             <div class="tooltip">
                 Notifications
