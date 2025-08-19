@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 200vh;
+}
+
+.outer-container{
+  margin: 40px auto;
+  border: 3px solid #00f;
+  width: 75vw;
+  height: 85vh;
+  position: relative;
+}
+
+.inner-container{
+  margin: 200px auto;
+  border: 2px dashed #0f0;
+  width: 40vw;
+  height: 50vh;
+}
+
+.box{
+  width: 150px;
+  height: 150px;
+  color: white;
+  padding: 1rem;
+}
+
+.absolute{
+  background-color: #00f;
+  position: absolute;
+  top:0px;
+  left:0px;  
+}
+
+.relative{
+  background-color: #0f0;
+  position: relative;
+  top: 300px;
+  left: 100px;
+}
+
+.fixed{
+ background-color: #f00;
+  position: fixed;
+  top: 100px;
+    
+}
+
+.sticky{
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  
+}
