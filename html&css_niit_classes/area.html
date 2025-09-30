@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="area.js"></script>
+</head>
+<body>
+    <input type="text" id="radius" name="radius" placeholder="Enter Radius">
+    <input type="button" name="button" value="submit" onclick="calcArea();">
+    <div id="displayResult"></div>
+
+
+<!-- input weight in kilogram -->
+    <input type="number" name="weight" id="weight" placeholder="Enter weight in kg">
+    <!-- get the displayDiv block in js -->
+    <button type="button" onclick="convertWeight();">convert</button>
+    <div id="displayDiv"></div>
+
+    <div id="multiplyTable" ></div>
+
+    <script>
+        function convertWeight(){
+            var weight = document.getElementById("weight").value;
+            var gram = weight * 1000;
+            document.getElementById("displayDiv").innerHTML = `<b> ${gram}g <b>`;
+        }
+
+        /* var displayDiv = document.getElementById("displayDiv");
+        var output = 0;
+
+        function  convertWeight(weight){
+        var weight = document.getElementById("weight").value;
+        var gram = weight * 1000;
+        output = gram;
+        displayDiv.innerHTML = `<b> ${output}g<b>`;
+        return gram;
+        } */
+
+
+        let number = 10;
+        let times = "";
+
+        for (times=1; times<=24; times++) {
+           let  multiplicationTable = number * times;
+           output += `<br>${number} * ${times} = ${multiplicationTable} <br>`
+            
+        }
+        document.getElementById("multiplyTable").innerHTML = output;
+    </script>
+
+
+</body>
+</html>
+
+
+
