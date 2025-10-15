@@ -11,11 +11,18 @@
      }
 
      header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: white;
         width: 100%;
         height: 80px;
         box-shadow: 3px 5px 7px rgba(0,0,0,0.3);
-        
+        transition: height 0.5s ease;
+     }
+
+     header.height120{
+      height: 120px;
      }
 
      .logo{
@@ -31,8 +38,8 @@
 
     .navigation{
         float: right;
-        margin-top: 25px;
         margin-right: 45px;
+        
      }
 
      .navigation #buy{
@@ -45,6 +52,7 @@
           font-family:Verdana, Geneva, Tahoma, sans-serif;
           font-weight: bolder;
           font-size: 0.7em;
+          text-decoration: none;
           border-radius: 7px 7px 7px 7px;
           animation: buyButton 1s ease forwards infinite;
      }
@@ -70,10 +78,11 @@
           font-weight: normal;
           border-radius: 7px 7px 7px 7px;
           cursors: pointer;
-          font-size: 0.8em;
+          font-size: 0.7em;
+          text-decoration: none;
      }
 
-     .navigation button.link{
+     .navigation .link{
         border: 0px;
         color:rgba(239, 68, 68, 0.8);
         background-color: white;
@@ -83,19 +92,16 @@
         margin-right: 8px;
         font-family:Arial, Helvetica, sans-serif;
         font-size: 0.7em;
+        text-decoration: none;
      }
 
-     .navigation button.link:hover{
-    
-        cursors-pointer;
+     .navigation .link:hover{
+        
+        cursor: pointer;
         color: rgba(21, 22, 22, 1);
      }
 
-     
-
-     #content{
-        margin-top: 30px;
-     }
+   
 
      /*categorybox*/
 
@@ -180,7 +186,10 @@
      }
 
      /*hero section box*/
-
+     #content{
+        margin-top: 30px;
+     }
+     
      #herosection{
         width: 100%;
         padding-bottom: 30px;
@@ -198,7 +207,21 @@
       padding-top: 20px;
      }
 
-      #heroforeground p{
+    .bg-red {
+      background-color: rgba(239, 68, 68, 0.8);
+     }
+
+     .bg-white {
+       background-color: white;
+      }
+
+
+     #heroforeground h2{
+      margin-top: 100px;
+      font-size: 1.5rem
+     }
+
+      #heroforeground p, h2{
          color: white;
          text-align: center;
          line-height: 1.6;
@@ -245,6 +268,11 @@
          background-color: white;
         color: rgba(239, 68, 68, 0.9);
         border: 1px solid white;
+        text-decoration: none;
+        padding: 8px 25px;
+         width: 150px;
+         margin-top: 1px;
+         
      }
 
      .menubox{
@@ -263,9 +291,17 @@
           align-items: center;
           position: relative;
      }
+/* 
+   #menu-lists {
+         
+         background-image: url("food/assets/media/20250929-WA0032.jpg");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
 
+      }
 
-
+ */
       #menu-lists .cards{
            width: 180px;
            height: 250px;
@@ -440,3 +476,255 @@
       height: 100%;
       object-fit: cover;
     }
+
+    /* REVIEW SECTION */
+
+         .review {
+      width: 80%;
+      min-height: 100vh;  /* full viewport height instead of fixed 500px */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; /* center horizontally */
+      
+      }
+
+         .review-cards{
+         width: 60%;
+         height: 300px;   /* ❌ same issue: fixed height */
+         margin: 10px auto; /* auto makes sure it’s centered */
+         padding: 15px;
+         background-color: rgba(181, 181, 181, 0.19);
+         border-radius: 8px;
+         overflow-y: auto; /* auto is safer than scroll, avoids empty scrollbar */
+         }
+
+
+
+    .review-cards .user-data{
+      border-bottom: 1px solid rgba(138, 135, 135, 1);
+    }
+
+    .user-data img{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    .user-data .user-name{
+      color: rgb(239, 68, 68);
+      font-size: 16px;
+      font-weight: bold;
+      font-family: monospace;
+    }
+
+    .user-data .date{
+      float: right;
+    }
+
+    .review-cards article {
+      margin-top: 20px;
+    }
+      
+   .review-cards article p{
+      line-height: 1.2em;
+   }
+
+   .review-cards .more {
+  display: block;
+  margin: 10px auto 0 auto; /* this centers it without guessing "left:38%" */
+  border: 0;
+  background-color: rgb(239, 68, 68);
+  padding: 8px 12px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+   .review-cards .more:hover{
+      background-color: rgba(239, 68, 68, 0.8);
+      cursor: pointer;
+   }
+
+   footer{
+      width: 100%
+      height: 400px;
+      background-color: #fff;
+      border-top: 2px solid gray;
+      margin-top: 80px;
+      padding-top: 50px;
+   }
+
+   footer #newsletter{
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      border: 6px solid  gold;
+      width:70%;
+      height: 300px;
+      margin-bottom: -60px;
+      position: relative;
+      left: 15%;
+      right: 15%;
+      top: 10%;
+   }
+   footer #newsletter img{
+      width: 200px;
+      height: 200px;
+      margin: 20px 0px 20px 20px;
+   }
+
+   footer form{
+      margin: 20px 20px 20px 30px;
+   }
+
+   footer form label{
+      font-size: 1em;
+      font-family: monospace;
+      font-weight: bolder;
+      color: #ca9103ff;
+   }
+
+   footer form span{
+      font-size: 1.3em;
+      color: black;
+      font-family: monospace;
+      font-weight: bolder;
+   }
+
+   footer form .prompt{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 0.7em;
+      font-family: monospace;
+      font-weight: bold;
+   }
+
+   footer form input{
+      padding: 15px 500px 15px 15px;
+      border: 1px solid gray;
+      position: relative
+   }
+
+    form .subscribe{
+      background-color: #ca9103ff;
+      color: white;
+      position: absolute;
+      padding: 8px 20px;
+      margin: 8px;
+      right: 130px;
+      cursor: pointer;
+      border: none;
+   }
+
+   
+
+   #footer-links{
+      width: 100%;
+      height: 450px;
+      background-color: rgb(239, 68, 68);
+      border-radius: 14% 14% 0px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+   }
+
+      .food{
+         width: 300px;
+         height: 200px;
+         padding: 20px;
+         line-height: 20px;
+      }
+
+
+    #newsimage{
+  
+      width: 200px;
+      height: 150px;
+    }
+      #newsinput{
+       
+         width: 400px;
+         height: 150px;
+         margin-left: 200px;
+         padding: 20px;
+        
+      }
+
+       .email{
+         border: 1px solid black;
+         width: 300px;
+         padding: 5px;
+         margin-top: 10px;
+      }
+      .subbtn{
+         background-color: orange;
+         color: white;
+         border: none;
+         
+      }
+      #our_menu, #useful_links, #contact,.download { 
+          width: 200px;
+         height: 300px;
+         padding: 10px;
+      }
+      
+      h3{
+         text-align: center;
+         border-bottom: 5px dashed black;
+         margin-bottom: 10px;
+         font-size: 1.5em;
+      }
+     
+     
+      .icon{
+         width:30px;
+         height: 30px;
+         border-radius: 50%;
+         background-color: orange;
+         margin: 3px;
+      }
+
+       .location-row{
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         margin-bottom: 10px;
+      }
+      .menu-list{
+         list-style: none;
+         line-height: 2em;
+      }
+      #download{
+         display: flex;
+         flex-direction: column;
+      }
+      #sub-download{
+         width: 150px;
+         height: 50px;
+         border: 1px solid black;
+         margin: 6px;
+         background-color: orange;
+      }
+      .visa{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+         height: 80px;
+         background-color: white;
+         margin-left: 25px;
+         padding-right: 25px;
+         
+      }
+
+      .visa span{
+         font-size: 16px;
+         font-weight: bold;
+         color: #333;
+      
+      }
