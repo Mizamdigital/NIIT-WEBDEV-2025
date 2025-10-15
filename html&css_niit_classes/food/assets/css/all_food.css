@@ -1,81 +1,89 @@
-*{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-     }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-     .category-box{
-        width: 95%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        gap: 2.5%;
-        padding: 20px;
-     }
+.category-box {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  gap: 2.5%;
+  padding: 20px;
+}
 
-     .items{
-        width: 100%;
-        
-     }
+.items {
+  width: 100%;
+  position: relative; /* This is the container for the absolute overlay */
+  border-radius: 13px;
+  overflow: hidden; /* Hides anything that goes outside the rounded corners */
+}
 
-     img.food-item{
-        width: 550px;
-        height: 300px;
-        object-fit: fill;
-        border-radius: 13px;
-    }
+img.food-item {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Use cover to maintain aspect ratio and fill space */
+  border-radius: 13px;
+  display: block; /* Removes bottom space under image */
+}
 
-     p.caption{
-            font-size: 1.0em;
-            font-weight: bold;
-            line-height: 1.2em;
-            color: white;
-            position: relative;
-            top: -100px;
-            z-index: 4;
-            text-align: center;
-        }
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* The dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Pushes content to the bottom */
+  padding: 20px;
+  color: white;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
 
-        .ratings_price{
-            position: relative;
-            top: -80px;
-            display: flex;
-            justify-content: space-around;
-            z-index: 4;
-            margin-left: -100px;
-            
-        }
+.items:hover .overlay-content {
+  opacity: 1; /* Show overlay on hover */
+}
 
-        #star{
-            color: white;
-            font-size: 20px;
-            z-index: 4;
-        
+p.caption {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.3em;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
-        }
-        
-        .number{
-            font-size: 20;
-            font-weight: bold;
-            color: white;
-            z-index: 4;
+.ratings_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
-        }
+.star {
+  font-size: 20px;
+}
 
-        .ratings_price .price{
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            z-index: 4;
-        }
+.number,
+.ratings_price .price {
+  font-size: 20px;
+  font-weight: bold;
+}
 
-        .rating_background{
-            position: relative;
-            width: 550px;
-            height: 300px;
-            border-radius: 13px;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 2;
-            top: 300px;
-        }
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* --- Responsive Design for Mobile --- */
+@media (max-width: 768px) {
+  .category-box {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    gap: 5%; /* Adjust the gap for a better vertical look */
+  }
+}
