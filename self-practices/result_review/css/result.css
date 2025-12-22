@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e7f1fcff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, #2326f4ff, #3509aeff)
+}
+
+ul{
+    text-align: right;
+    list-style-type:none;
+    padding: 1rem;
+}
+
+li{
+    display: inline-block;
+    margin-inline: 1.5rem;
+}
+
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+li a:hover, li a:focus{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #cbcbcbeb;
+}
+
+
+
+.main-container{
+    display: flex;
+    background-color: #f7f7f7ee;
+    max-width: 500px;
+    height: 400px;
+    margin: auto ;
+    margin-top: 10%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #88888821; 
+    
+}
+
+.boxesContainer{
+    display: flex; 
+    flex-direction: row;
+}
+
+
+.firstBox{
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(180deg, #2326f4ff, #3509aeff);
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.headings{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    color: #cbcbcbeb;
+    font-weight: bold;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    background: linear-gradient(180deg, #03011495, #04011d1d);
+    box-shadow: 2px 2px 3px #23222239; 
+}
+
+h3{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.outOf{
+    margin-top: -5px;
+    font-size: 0.9rem;
+    color: #cbcbcbeb;
+}
+
+.great{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-left: 3.8rem
+}
+
+.firstBox p{
+    
+    width: 25ch;
+    font-size: 0.9rem;
+    color: #cbcbcbeb;
+    
+}
+
+.people-a{
+    margin-left: 0.7rem;
+}
+
+.people-b{
+    margin-left: 3.6rem;
+}
+
+.opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    left: 0;
+    background: linear-gradient(0deg, transparent, #ffffff57);
+    border-radius: 20px;
+}
+
+.secondBox{
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+
+}
+
+.second-box-card{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sumCardOne {
+    display: flex;
+    background-color: #ef262d1a;
+    padding: 0.4rem 0rem 0.4rem 0rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.icon{
+    font-size: 0.8rem;
+    margin-left: 0.7rem;
+}
+
+.sumCardTwo{
+    display: flex;
+    padding: 0.4rem 0rem 0.4rem 0rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background: #f6dc1826;
+}
+
+.memo{
+    margin-left: 0.6rem;
+    color: #efc726ec;
+    margin-right: 10px;
+}
+
+.one-detail{
+    margin-left: 0.6rem;
+    color: #ef262da3;
+    margin-right: 10px;
+}
+
+.percentage{
+    padding-left: 1.5rem;
+    margin-right: 0.5rem;
+    color: #000000d1;
+    white-space: nowrap;
+}
+
+.percentage_b{
+    padding-left: 1.7rem;
+    margin-right: 0.5rem;
+    color: #000000d1;
+    white-space: nowrap;
+}
+
+.percentage_c{
+    padding-left: 2.5rem;
+    margin-right: 0.5rem;
+    color: #000000d1;
+    white-space: nowrap;
+}
+
+.sumCardThree{
+    display: flex;
+    padding: 0.4rem 0rem 0.4rem 0rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background: #0fdf963a;
+}
+
+.verb{
+    margin-left: 0.6rem;
+    color: #0fdf96be;
+    margin-right: 10px;
+}
+
+
+.sumCardFour{
+    display: flex;
+    padding: 0.4rem 0rem 0.4rem 0rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background: #2730d51d;
+}
+
+.visual{
+    margin-left: 0.6rem;
+    color: #0f19dab3;
+    margin-right: 10px;
+}
+
+.percentage_d{
+    padding-left: 2.7rem;
+    margin-right: 0.5rem;
+    color: #000000d1;
+    white-space: nowrap;
+}
+
+
+.continue-btn{
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 30px;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.newspaper{
+    width: 80%;
+    justify-content: center;
+    margin:auto;
+    margin-top: 1rem;
+}
+
+.square{
+    width: 20vw;
+    height: 20vw;
+    background: linear-gradient(180deg, #2326f4ff, #3509aeff); 
+    padding: 10px; 
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.left{
+    float: left;
+    margin-right: 1rem;
+}
+
+.right{
+    float:right;
+    margin-left: 1rem;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/* MOBILE VIEW */
+@media screen and (max-width: 480px) {
+
+ul{
+   
+    padding: 1.7rem;
+}
+
+li{
+   
+   margin-inline: 0.5rem;
+}
+
+li a{
+    font-size: 1rem;
+}
+
+
+    .main-container{
+        flex-direction: column; /* Stack vertically */
+        width: 60%;           /* Take full phone width */
+        height: auto;          /* Allow content to grow */
+        margin-top: 2rem;
+        border-radius: 0px 0px 20px 20px;      /* Cleaner mobile layout */
+    }
+
+    .boxesContainer{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .firstBox{
+        border-radius: 0px 0px 20px 20px;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .headings{
+    margin-left: 4.5rem;
+    
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+
+.great{
+    margin-left: 5.2rem
+}
+
+.firstBox p{
+    margin-left: 1.5rem;
+}
+
+.opacity{
+     border-radius: 0px 0px 20px 20px;
+}
+
+
+ .secondBox{
+    width: 100%;
+    padding: 1.5rem 1rem;
+ }
+
+  .percentage{
+    margin-left: 2rem;
+}
+.percentage_b{
+    margin-left: 2rem;
+}
+.percentage_c{
+    margin-left: 2rem;
+}
+.percentage_d{
+    margin-left: 2rem;
+}
+    
+}
+
+
+
